@@ -23,7 +23,7 @@ metadata:
 data:
   # Configuration values can be set as key-value properties
   db-password: devdb@123
-  db-hostname: devdb
+  db-username: devdb
  ---
 apiVersion: v1
 kind: Secret
