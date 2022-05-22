@@ -86,6 +86,19 @@ spec:
                 secretKeyRef:
                   name: mysql-db-password
                   key: db-password
+  
+  OR
+  
+            - name: MONGO_INITDB_ROOT_USERNAME
+              valueFrom: 
+                configMapKeyRef: 
+                  name: mongo-configmap 
+                  key: db-username
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom: 
+                secretKeyRef:
+                  name: mongo-db-password
+                  key: db-password
 ```
 
 ## Step-05: Create & Test
