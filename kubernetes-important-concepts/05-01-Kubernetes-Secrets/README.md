@@ -84,7 +84,7 @@ spec:
             - name: MONGO_DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: mysql-db-password
+                  name: mongo-db-password
                   key: db-password
   
   OR
