@@ -38,8 +38,6 @@ helm repo update
 
 helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo update
-
-
 ```
 ## 2. Deploy nginx-ingress using helm chart
  # NB. This will create nginx-ingress namespace, clusterRole, ClusterRoleBinding and more
